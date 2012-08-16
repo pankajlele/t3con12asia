@@ -1,0 +1,19 @@
+#                                                                        #
+# Routes configuration                                                   #
+#                                                                        #
+-
+  name: 'Event REST API POST call'
+  uriPattern: 'events'
+  defaults:
+    '@package': 'Lelesys.EventsExample'
+    '@controller': 'Event'
+    '@action': 'index'
+    '@format': 'json'
+-
+  name: 'Event REST API GET/PUT/DELETE calls'
+  uriPattern: 'events/{event}'
+  defaults:
+    '@package': 'Lelesys.EventsExample'
+    '@controller': 'Event'
+    '@action': 'index'
+    '@format': 'json'

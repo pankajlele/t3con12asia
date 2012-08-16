@@ -7,7 +7,7 @@ Configuration/Development/Settings.yaml
 Configuration/Production/Settings.yaml
 Configuration/Settings.yaml
 /Data/
-/Packages/Application/
+#/Packages/Application/
 /Packages/.Shortcuts/
 /Tests/
 /Web/_Resources/

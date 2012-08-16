@@ -1,0 +1,23 @@
+# Policy configuration
+roles:
+  Administrator: []
+  Customer: []
+  Free: [Customer]
+  Developer: [Customer]
+  Standard: [Customer]
+  Premium: [Customer]
+
+resources:
+  methods:
+    restApi: 'method(Launchr\Core\Controller\.*Controller->.*Action())'
+  entities:
+    Launchr_Core_Domain_Model_Launch:
+      # Access to all Launch objects where createdBy is NULL OR
+      # the objects which are not created by current logged in user is DENIED
+      # This means objects which are createdBy current logged in user are only accessible
+      Launchr_Core_Launches_My: 'this.createdBy == NULL || this.createdBy != current.securityContext.account'
+
+acls:
+  Customer:
+    methods:
+      restApi: GRANT
