@@ -7,6 +7,15 @@
 # Please refer to the FLOW3 manual for possible configuration options.   #
 #                                                                        #
 
+
+-
+  name: 'LelesysEventsExample'
+  uriPattern: '<LelesysEventsExampleSubroutes>'
+  defaults:
+    '@format': 'json'
+  subRoutes:
+    LelesysEventsExampleSubroutes:
+      package: Lelesys.EventsExample
 ##
 # Subroutes from the Welcome package.
 #
