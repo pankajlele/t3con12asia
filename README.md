@@ -19,7 +19,7 @@ Note: Disk paths shown below are not mandatory. You can put the code anywhere on
 3. git submodule init
 4. git submodule update
 5. Create new MySQL database and a user if you want
-6. Create new VirtualHost pointing to /var/www/t3con12asia.app/FLOW3Application/Web (Visit http://flow3.typo3.org/documentation/guide/partii/installation.html for mor information)
+6. Create new VirtualHost pointing to /var/www/t3con12asia.app/FLOW3Application/Web (Visit http://flow3.typo3.org/documentation/guide/partii/installation.html for more information)
 7. Create a local DNS entry in your /etc/hosts file 127.0.0.1 t3con12asia.app
 8. Edit /var/www/t3con12asia.app/FLOW3Application/Configuration/Development/Settings.yaml file and update the database name and credentials
 9. cd /var/www/t3con12asia.app/FLOW3Application
